@@ -7,6 +7,8 @@ import {appRoutingModule} from './app.routing';
 import { JakeComponent } from './jake/jake.component';
 import { HomeComponent } from './home/home.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSliderModule} from '@angular/material/slider';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
   imports: [
     BrowserModule,
     appRoutingModule,
-    MatSidenavModule
+    MatSidenavModule,
+    BrowserAnimationsModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

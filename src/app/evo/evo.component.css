@@ -1,14 +1,15 @@
 body, html {
   height: 100%;
+  margin: 0;
+  font-family: Arial;
 }
-
 .bg {
   /* The image used */
   background: url('../../assets/237-2370116_post-jojos-bizarre-adventure-jotaro-png.png');
 
-  background-size: cover;
-  border: 2px solid #e9385a;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid red;
   width: 100%;
   height: 1024px;
-
 }

@@ -1,10 +1,13 @@
 body, html {
   height: 100%;
+  margin: 0;
+  font-family: Arial;
 }
 
 .bg {
   /* The image used */
-  background: url('../../assets/JosephJoestar123.png') no-repeat center center fixed;
+  background: url('../../assets/JosephJoestar123.png');
+
   background-repeat: no-repeat;
   background-size: contain;
   border: 1px solid red;
