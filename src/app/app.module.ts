@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { EvoComponent } from './evo/evo.component';
 import {appRoutingModule} from './app.routing';
 import { JakeComponent } from './jake/jake.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { JakeComponent } from './jake/jake.component';
   ],
   imports: [
     BrowserModule,
-    appRoutingModule
+    appRoutingModule,
+    NoopAnimationsModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
