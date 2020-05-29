@@ -1,28 +1,20 @@
 <html>
-  <body>
+  <body class="ttsize">
 
-    <div>
-      <a class="nav-item nav-link" routerLink="/">HOME</a>
-    </div>
-    <div>
-      <a class="nav-item nav-link" routerLink="/evo">EVODEN</a>
-    </div>
-    <div>
-      <a class="nav-item nav-link" routerLink="/jake">JAKE</a>
+    <div class="tablink">
+      <button id="home" class="nav-item nav-link" routerLink="/">HOME</button>
+      <button id="evo" class="nav-item nav-link" routerLink="/evo">EVODEN</button>
+      <button id="jake" class="nav-item nav-link" routerLink="/jake">JAKE</button>
     </div>
   </body>
 
 
   <!-- main content container -->
-  <div class="jumbotron">
+
     <div class="container">
-      <div class="row">
-        <div class="col-sm-8 offset-sm-2">
           <router-outlet></router-outlet>
-        </div>
-      </div>
     </div>
-  </div>
+
 </html>
 
 

@@ -12,3 +12,32 @@ body, html {
   height: 1024px;
 
 }
+ .ttsize {
+   font-size: 30px;
+ }
+
+.tablink {
+  background-color: #555;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#evo {background-color: red;}
+#jake {background-color: green;}
+#home {background-color: white;}
+

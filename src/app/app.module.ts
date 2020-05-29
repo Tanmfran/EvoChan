@@ -5,19 +5,19 @@ import { AppComponent } from './app.component';
 import { EvoComponent } from './evo/evo.component';
 import {appRoutingModule} from './app.routing';
 import { JakeComponent } from './jake/jake.component';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './home/home.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 
 @NgModule({
   declarations: [
     AppComponent,
     EvoComponent,
-    JakeComponent
+    JakeComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     appRoutingModule,
-    NoopAnimationsModule,
     MatSidenavModule
   ],
   providers: [],
