@@ -1,14 +1,29 @@
 <html>
-  <body class="ttsize">
+<!--  <body class="ttsize">-->
 
-    <div class="tablink">
-      <button id="home" class="nav-item nav-link" routerLink="/">HOME</button>
-      <button id="evo" class="nav-item nav-link" routerLink="/evo">EVODEN</button>
-      <button id="jake" class="nav-item nav-link" routerLink="/jake">JAKE</button>
+<!--    <div class="tablink">-->
+<!--      <button id="home" class="nav-item nav-link" routerLink="/">HOME</button>-->
+<!--      <button id="evo" class="nav-item nav-link" routerLink="/evo">EVODEN</button>-->
+<!--      <button id="jake" class="nav-item nav-link" routerLink="/jake">JAKE</button>-->
+<!--    </div>-->
+<!--  </body>-->
+
+<mat-sidenav-container>
+  <mat-sidenav>Start</mat-sidenav>
+  <mat-sidenav-content>
+    <div class="page-tabs">
+      <button mat-button id="home" routerLink="/"> Home </button>
+      <button mat-button id="evo" routerLink="/evo"> Evo </button>
+      <button mat-button id="jake" routerLink="/jake"> Jake </button>
     </div>
-  </body>
+  </mat-sidenav-content>
 
-
+</mat-sidenav-container>
+<!--<div class="page-tabs">
+  <button mat-button id="home" routerLink="/"> Home </button>
+  <button mat-button id="evo" routerLink="/evo"> Evo </button>
+  <button mat-button id="jake" routerLink="/jake"> Jake </button>
+</div>-->
   <!-- main content container -->
 
     <div class="container">

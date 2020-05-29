@@ -1,6 +1,7 @@
 
+/*
 .bg {
-  /* The image used */
+  !* The image used *!
   background: url('../assets/237-2370116_post-jojos-bizarre-adventure-jotaro-png.png');
 
   background-size: cover;
@@ -34,7 +35,15 @@
   height: 100%;
 }
 
+.side-nav {
+  margin: 10px;
+  border: 1px solid #555;
+}
+
 #evo {background-color: red;}
 #jake {background-color: green;}
 #home {background-color: white;}
+*/
+
+
 
