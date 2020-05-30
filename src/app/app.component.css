@@ -5,3 +5,26 @@
   left: 0;
   right: 0;
 }
+
+
+.navigation {
+  background: #000000;
+  color: white;
+}
+
+.navbar {
+border-bottom: 2px solid transparent;
+color: #F9F9F9;
+display: inline-block;
+font-size: 11px;
+font-weight: 800;
+line-height: 76px;
+margin: 0 0.85em;
+overflow: hidden;
+padding-left: 12px;
+padding-right: 12px;
+padding-top: 2px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+transition: color 1s cubic-bezier(0.06, 0.81, 0, 0.98), border-color 0.5s cubic-bezier(0.06, 0.81, 0, 0.98);
+}

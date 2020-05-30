@@ -1,6 +1,7 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {MatSliderChange} from '@angular/material/slider';
 import {MatSidenav} from '@angular/material/sidenav';
+import {NgbDropdown} from '@ng-bootstrap/ng-bootstrap';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +9,21 @@ import {MatSidenav} from '@angular/material/sidenav';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+  constructor(public router: Router) {
+    this.selectedFriend = this.navLinks.find(x => x.path === this.router.url).label;
+    if (this.selectedFriend === 'Home') {
+      this.selectedFriend = 'Friends';
+    }
+  }
   @ViewChild('sidenav') sidenav: MatSidenav;
-  reason = '';
+  @ViewChild('NgbDropdown') dropdown: NgbDropdown;
+  selectedFriend = 'Friends';
   activeLinkIndex: number;
+  home = {
+    label: 'Home',
+    path: '/',
+    index: 0,
+  };
   navLinks = [
     {
       label: 'Home',
@@ -29,14 +42,47 @@ export class AppComponent implements OnInit {
     }
   ];
 
-  title = 'EvoChan';
+  friends = [
+    {
+      label: 'Evo',
+      path: '/evo',
+      index: 1
+    },
+    {
+      label: 'Jake',
+      path: '/jake',
+      index: 2
+    },
+    {
+      label: 'Stephen',
+      path: '/stephen',
+      index: 3
+    },
+    {
+      label: 'Tannor',
+      path: '/tannor',
+      index: 4
+    },
+    {
+      label: 'Vance',
+      path: '/vance',
+      index: 5
+    },
+    {
+      label: 'Amie',
+      path: '/amie',
+      index: 6
+    }
+  ];
 
+  title = 'EvoChan';
   ngOnInit(): void {
     this.activeLinkIndex = 0;
   }
 
   close() {
     this.sidenav.close();
+    this.dropdown.close();
   }
 
   // audio = new Audio('../assets/coomer.mp4.mp3');

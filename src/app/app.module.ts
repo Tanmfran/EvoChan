@@ -15,6 +15,11 @@ import { FooterComponent } from './footer/footer.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AmieComponent } from './People/amie/amie.component';
+import { TannorComponent } from './People/tannor/tannor.component';
+import { VanceComponent } from './People/vance/vance.component';
+import { StephenComponent } from './People/stephen/stephen.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +28,11 @@ import {MatIconModule} from '@angular/material/icon';
     JakeComponent,
     HomeComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AmieComponent,
+    TannorComponent,
+    VanceComponent,
+    StephenComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +43,8 @@ import {MatIconModule} from '@angular/material/icon';
     MatTabsModule,
     MatButtonModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
