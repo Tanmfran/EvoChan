@@ -7,6 +7,21 @@ import {MatSliderChange} from '@angular/material/slider';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  navLinks = [
+    {
+      label: 'home',
+      path: '/'
+    },
+    {
+      label: 'evo',
+      path: '/evo'
+    },
+    {
+      label: 'jake',
+      path: '/jake'
+    }
+  ];
+
   title = 'EvoChan';
   audio = new Audio('../assets/coomer.mp4.mp3');
   volume = 50;
