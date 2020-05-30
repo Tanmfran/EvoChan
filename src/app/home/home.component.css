@@ -10,3 +10,17 @@ body, html {
   -o-background-size: cover;
   background-size: cover;
 }
+
+
+.fiddlemodal {
+  width: 100%;
+
+  height: 100vh;
+  position: absolute;
+}
+
+.spookbutton {
+  position: absolute;
+  color: white;
+  background: black;
+}

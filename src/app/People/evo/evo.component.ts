@@ -11,6 +11,7 @@ export class EvoComponent {
   }
 //    this.audio.src = '../../assets/anime-sound-008.mp3';
   playIt = () => {
-    this.soundMakerService.playSound('../../assets/anime-sound-008.mp3');
+    this.soundMakerService.loadSound('../../assets/anime-sound-008.mp3');
+    this.soundMakerService.playSound();
   }
 }

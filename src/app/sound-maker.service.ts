@@ -8,9 +8,12 @@ export class SoundMakerService {
   constructor() {
   }
 
-  playSound = (audioSource: string) => {
+  loadSound = (audioSource: string) => {
     this.audio.src = audioSource;
     this.audio.load();
+  }
+
+  playSound = () => {
     this.audio.play();
   }
 }

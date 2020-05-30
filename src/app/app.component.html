@@ -8,7 +8,7 @@
     <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
   </button>
 
-  <button class="btn btn-outline-primary" id="homebutton" [routerLink]="home.path" (click)="selectedFriend='Friends'">Home</button>
+  <button class="btn btn-outline-primary" id="homebutton" [routerLink]="home.path" (click)="onHomePress()">Home</button>
     <div ngbDropdown class="d-inline-block" #friendSelector="ngbDropdown">
       <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{this.selectedFriend}}</button>
       <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
@@ -35,13 +35,8 @@
     </mat-sidenav>
   </mat-sidenav-container>
 
-<div class="modal-body" *ngIf="count>=5 && count<6">
-  <input type="image" src="../assets/49tjaosw3km41.png"  alt="spook" class="fiddlemodal btn-danger"/>
 </div>
 
-
-</div>
-<button class="spookbutton" id="random" (click)="move()">Dont Click This</button>
 <router-outlet>
 
 </router-outlet>

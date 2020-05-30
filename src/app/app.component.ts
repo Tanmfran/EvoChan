@@ -10,7 +10,7 @@ import {SoundMakerService} from './sound-maker.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  constructor(public router: Router, private soundMakerService: SoundMakerService) {
+  constructor(public router: Router) {
     this.selectedFriend = this.navLinks.find(x => x.path === this.router.url).label;
     if (this.selectedFriend === 'Home') {
       this.selectedFriend = 'Friends';
@@ -82,31 +82,21 @@ export class AppComponent implements OnInit {
     this.activeLinkIndex = 0;
   }
 
-  close() {
-    this.sidenav.close();
-    this.dropdown.close();
-  }
-
-  playIt = () => {
-    this.soundMakerService.playSound('../assets/Fiddlesticks_Original_Attack_2 (online-audio-converter.com).mp3');
+  onHomePress = () => {
+    this.selectedFriend = 'Friends';
+    this.count = 0;
+    const btn = document.getElementById('random');
+    btn.style.top = null;
+    btn.style.left = null;
+    btn.style.fontSize = null;
   };
 
-  move() {
-    const btn = document.getElementById('random');
-    if (this.count % 2) {
-      btn.style.top = Math.floor((Math.random() * 1000 + 1)) + 'px';
-      btn.style.left = Math.floor((Math.random() * 1000 + 1)) + 'px';
-    } else {
-      btn.style.top = Math.floor((Math.random() * 256 + 1)) + 'px';
-      btn.style.left = Math.floor((Math.random() * 256 + 1)) + 'px';
-    }
-    this.count++;
-    if (this.count === 5) {
-      this.playIt();
-    }
-    btn.style.fontSize = 17 + (this.count * 10) + 'px';
-    console.log(btn.style.top);
-  }
+  close = () => {
+    this.sidenav.close();
+    this.dropdown.close();
+  };
+
+
   // audio = new Audio('../assets/coomer.mp4.mp3');
   // volume = 50;
   // constructor() {

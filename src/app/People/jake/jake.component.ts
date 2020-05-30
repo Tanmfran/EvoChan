@@ -11,6 +11,7 @@ export class JakeComponent {
   }
 
   playIt = () => {
-    this.soundMakerService.playSound(    '/../assets/goodbye-jojo.mp3');
+    this.soundMakerService.loadSound('/../assets/goodbye-jojo.mp3');
+    this.soundMakerService.playSound();
   }
 }
