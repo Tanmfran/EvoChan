@@ -10,40 +10,34 @@
   height: 1024px;
 
 }
- .ttsize {
-   font-size: 30px;
- }
+/*
+ */
 
-.tablink {
-  background-color: #555;
-  color: white;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
+.home {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQZUfVcN16J0_4AcLqv-eKNKic8HtZ5jPSc9VAsaWb4sJ7NlmE7&usqp=CAU");
+  background-size: cover;
 }
 
-.tablink:hover {
-  background-color: #777;
+.jake {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTql-fekk2NkwsCA9D1NuBCFHccmZxM_ZHv8zcz3Ls8U7tGZ9sF&usqp=CAU");
+  background-size: cover;
 }
 
-.tabcontent {
-  color: white;
-  display: none;
-  padding: 100px 20px;
-  height: 100%;
+.evo {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS4GtW_Hm_YJhGU36NBwzZ7p4r4Ew2bQYRYx12YHE8tiy_vXcxH&usqp=CAU");
+  background-size: cover;
+}
+.testNav {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
-.side-nav {
-  margin: 10px;
-  border: 1px solid #555;
-}
-
-#evo {background-color: red;}
-#jake {background-color: green;}
-#home {background-color: white;}
-*/
-
-
+#evo {color: deeppink; font-size: 20px; font-style: oblique; font-weight: bolder}
+#jake {color: deeppink; font-size: 20px; font-style: oblique; font-weight: bolder}
+#home {color: deeppink; font-size: 20px; font-style: oblique; font-weight: bolder}
 

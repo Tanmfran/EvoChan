@@ -1,2 +1,10 @@
+@import "~bootstrap/dist/css/bootstrap.css";
 
 
+.bodyBG{
+  background: url('https://wallpapercave.com/wp/wp4756266.jpg') no-repeat center center fixed;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 1080px;
+}

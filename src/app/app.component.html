@@ -1,4 +1,4 @@
-<html>
+
 <!--  <body class="ttsize">-->
 
 <!--    <div class="tablink">-->
@@ -8,17 +8,31 @@
 <!--    </div>-->
 <!--  </body>-->
 
-<mat-sidenav-container>
-  <mat-sidenav>Start</mat-sidenav>
-  <mat-sidenav-content>
+<mat-sidenav-container  class="testNav">
+  <mat-sidenav opened mode="side" style="background-color: lavenderblush">
     <div class="page-tabs">
-      <button mat-button id="home" routerLink="/"> Home </button>
-      <button mat-button id="evo" routerLink="/evo"> Evo </button>
-      <button mat-button id="jake" routerLink="/jake"> Jake </button>
-    </div>
-  </mat-sidenav-content>
+     <mat-nav-list>
+       <mat-list-item id="home" class="home"  routerLink="/" > Home</mat-list-item>
+       <mat-list-item id="evo" class="evo" routerLink="/evo"> Evo </mat-list-item>
+       <mat-list-item id="jake" class="jake" routerLink="/jake"> Jake </mat-list-item>
+     </mat-nav-list>
+  </div>
+  </mat-sidenav>
 
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
 </mat-sidenav-container>
+
+    <!--<div class="page-tabs">
+      <button mat-button id="home" class="home"  routerLink="/" style=""> Home </button>
+      <button mat-button id="evo" class="evo" routerLink="/evo"> Evo </button>
+      <button mat-button id="jake" class="jake" routerLink="/jake"> Jake </button>
+    </div>-->
+
+
+
+
 <!--<div class="page-tabs">
   <button mat-button id="home" routerLink="/"> Home </button>
   <button mat-button id="evo" routerLink="/evo"> Evo </button>
@@ -26,10 +40,8 @@
 </div>-->
   <!-- main content container -->
 
-    <div class="container">
-          <router-outlet></router-outlet>
-    </div>
 
-</html>
+
+
 
 
