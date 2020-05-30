@@ -1,33 +1,26 @@
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial;
-  cursor: wait;
+[_nghost-c5] {
+  display: inline-block !important;
+  width: 100%;
+}
+.mat-tab-link-active,
+.mat-tab-label-active {
+  background-color: #5EADB0;
+  color: #D5FEFF;
+  border: 1px solid #6B7F7F;
+  font-weight: bold;
 }
 
-
-.tablink {
-  background-color: #555;
-  color: white;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
+.mat-tab-link,
+.mat-tab-label {
+  line-height: 50px !important;
+  height: 50px !important;
+  min-width: 300px !important;
+  border: 1px solid #7e7e7e;
 }
 
-.tablink:hover {
-  background-color: #777;
+.tabContentContainer {
+  border: 1px solid #aaaaaa;
+  background: #ffffff 50% 50% repeat-x;
 }
 
-.tabcontent {
-  color: white;
-  display: none;
-
-  height: 100%;
-}
-
-#evo {background-color: red;}
-#jake {background-color: green;}
-#home {background-color: orange;}
 

@@ -1,9 +1,10 @@
 <html>
+<app-header></app-header>
 <div>
 <nav mat-tab-nav-bar>
   <a mat-tab-link
-    *ngFor="let link of navLinks"
-    [routerLink]="link.path">
+        *ngFor="let link of navLinks; let i = index;"
+        [routerLink]="link.path">
     {{link.label}}
   </a>
 </nav>
@@ -12,5 +13,4 @@
 <div class="container">
   <router-outlet></router-outlet>
 </div>
-
 </html>
