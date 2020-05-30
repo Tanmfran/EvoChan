@@ -16,6 +16,7 @@
   <button type="button" mat-icon-button (click)="sidenav.open()" color="primary">
     <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
   </button>
+  <button type="button">Home</button>
   <mat-sidenav-container
     class="example-container" (backdropClick)="close()">
     <mat-sidenav #sidenav (keydown.escape)="close()" disableClose>
@@ -27,6 +28,7 @@
         </button>
       </p>
     </mat-sidenav>
+
 </mat-sidenav-container>
 </div>
 
