@@ -1,16 +1,37 @@
 <html>
-<app-header></app-header>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<!--<div>-->
+<!--<nav mat-tab-nav-bar>-->
+<!--  <a mat-tab-link-->
+<!--        *ngFor="let link of navLinks; let i = index;"-->
+<!--        [routerLink]="link.path">-->
+<!--    {{link.label}}-->
+<!--  </a>-->
+<!--</nav>-->
+<!--</div>-->
+
 <div>
-<nav mat-tab-nav-bar>
-  <a mat-tab-link
-        *ngFor="let link of navLinks; let i = index;"
-        [routerLink]="link.path">
-    {{link.label}}
-  </a>
-</nav>
+  <button type="button" mat-icon-button (click)="sidenav.open()" color="primary">
+    <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+  </button>
+  <mat-sidenav-container
+    class="example-container" (backdropClick)="close()">
+    <mat-sidenav #sidenav (keydown.escape)="close()" disableClose>
+      <p *ngFor="let link of navLinks"
+      [routerLink]="link.path"
+      (click)="close()">
+        <button mat-button>
+          {{link.label}}
+        </button>
+      </p>
+    </mat-sidenav>
+</mat-sidenav-container>
 </div>
-<!-- main content container -->
-<div class="container">
-  <router-outlet></router-outlet>
-</div>
+
+
+<router-outlet></router-outlet>
+
+
 </html>

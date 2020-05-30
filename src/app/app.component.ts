@@ -1,5 +1,6 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {MatSliderChange} from '@angular/material/slider';
+import {MatSidenav} from '@angular/material/sidenav';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,8 @@ import {MatSliderChange} from '@angular/material/slider';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+  @ViewChild('sidenav') sidenav: MatSidenav;
+  reason = '';
   activeLinkIndex: number;
   navLinks = [
     {
@@ -31,6 +34,11 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.activeLinkIndex = 0;
   }
+
+  close() {
+    this.sidenav.close();
+  }
+
   // audio = new Audio('../assets/coomer.mp4.mp3');
   // volume = 50;
   // constructor() {
