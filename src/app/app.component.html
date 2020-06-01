@@ -1,45 +1,39 @@
-<head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!--<head>-->
+<!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+<!--</head>-->
 
-</head>
+<!--<div class="navigation">-->
+<!--  <button class="btn btn-dark mr-1" id="homebutton" [routerLink]="home.path" (click)="onHomePress()">Home</button>-->
+<!--    <div ngbDropdown class="d-inline-block" #friendSelector="ngbDropdown">-->
+<!--      <button class="btn btn-dark mr-1" id="dropdownBasic1" ngbDropdownToggle>{{this.selectedFriend}}</button>-->
+<!--      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">-->
+<!--        <p *ngFor="let friend of friends"-->
+<!--           [routerLink]="friend.path"-->
+<!--           (click)="friendSelector.close()">-->
+<!--          <button mat-button (click)="selectedFriend=friend.label">-->
+<!--            {{friend.label}}-->
+<!--          </button>-->
+<!--        </p>-->
+<!--      </div>-->
+<!--    </div>-->
 
-<div class="navigation">
-  <button type="button" mat-icon-button (click)="sidenav.open()" color="primary">
-    <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
-  </button>
+<!--  <button class="btn btn-dark mr-1" [routerLink]="valorant.path">{{valorant.label}}</button>-->
+<!--</div>-->
+<!--  <mat-sidenav-container-->
+<!--    class="example-container" (backdropClick)="close()">-->
+<!--    <mat-sidenav #sidenav (keydown.escape)="close()" disableClose>-->
+<!--      <p *ngFor="let link of navLinks"-->
+<!--      [routerLink]="link.path"-->
+<!--      (click)="close()">-->
+<!--        <button mat-button>-->
+<!--          {{link.label}}-->
+<!--        </button>-->
+<!--      </p>-->
+<!--    </mat-sidenav>-->
+<!--  </mat-sidenav-container>-->
 
-  <button class="btn btn-outline-primary" id="homebutton" [routerLink]="home.path" (click)="onHomePress()">Home</button>
-    <div ngbDropdown class="d-inline-block" #friendSelector="ngbDropdown">
-      <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{this.selectedFriend}}</button>
-      <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-        <p *ngFor="let friend of friends"
-           [routerLink]="friend.path"
-           (click)="friendSelector.close()">
-          <button mat-button (click)="selectedFriend=friend.label">
-            {{friend.label}}
-          </button>
-        </p>
-      </div>
-    </div>
+<router-outlet></router-outlet>
 
-  <mat-sidenav-container
-    class="example-container" (backdropClick)="close()">
-    <mat-sidenav #sidenav (keydown.escape)="close()" disableClose>
-      <p *ngFor="let link of navLinks"
-      [routerLink]="link.path"
-      (click)="close()">
-        <button mat-button>
-          {{link.label}}
-        </button>
-      </p>
-    </mat-sidenav>
-  </mat-sidenav-container>
-
-</div>
-
-<router-outlet>
-
-</router-outlet>
 
 
 

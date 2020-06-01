@@ -20,6 +20,11 @@ import { AmieComponent } from './People/amie/amie.component';
 import { TannorComponent } from './People/tannor/tannor.component';
 import { VanceComponent } from './People/vance/vance.component';
 import { StephenComponent } from './People/stephen/stephen.component';
+import { ValoranthomeComponent } from './Valorant/valoranthome/valoranthome.component';
+import { ValorantheaderComponent } from './_layouts/valorantheader/valorantheader.component';
+import { BaselayoutComponent } from './_layouts/baselayout/baselayout.component';
+import { ValorantlayoutComponent } from './_layouts/valorantlayout/valorantlayout.component';
+import { BaseheaderComponent } from './_layouts/baseheader/baseheader.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +37,12 @@ import { StephenComponent } from './People/stephen/stephen.component';
     AmieComponent,
     TannorComponent,
     VanceComponent,
-    StephenComponent
+    StephenComponent,
+    ValoranthomeComponent,
+    ValorantheaderComponent,
+    BaselayoutComponent,
+    ValorantlayoutComponent,
+    BaseheaderComponent
   ],
   imports: [
     BrowserModule,

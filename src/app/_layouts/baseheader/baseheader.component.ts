@@ -1,15 +1,14 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
+import {Router} from '@angular/router';
 import {MatSidenav} from '@angular/material/sidenav';
 import {NgbDropdown} from '@ng-bootstrap/ng-bootstrap';
-import {Router} from '@angular/router';
-import {SoundMakerService} from './sound-maker.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-baseheader',
+  templateUrl: './baseheader.component.html',
+  styleUrls: ['./baseheader.component.css']
 })
-export class AppComponent implements OnInit {
+export class BaseheaderComponent implements OnInit {
   constructor(public router: Router) {
     this.selectedFriend = this.navLinks.find(x => x.path === this.router.url).label;
     if (this.selectedFriend === 'Home') {
@@ -92,36 +91,12 @@ export class AppComponent implements OnInit {
     btn.style.top = null;
     btn.style.left = null;
     btn.style.fontSize = null;
-  };
+  }
 
   close = () => {
     this.sidenav.close();
     this.dropdown.close();
-  };
-
-
-  // audio = new Audio('../assets/coomer.mp4.mp3');
-  // volume = 50;
-  // constructor() {
-  //   this.audio.load();
-  // }
-  // onInputChange = (event: MatSliderChange) => {
-  //   const elements: any = document.getElementsByClassName('tablink');
-  //   this.audio.volume = event.value / 100;
-  //   if (elements) {
-  //     // tslint:disable-next-line:prefer-for-of
-  //     for (let i = 0; i < elements.length; i++) {
-  //       if (elements[i].style) {
-  //         elements[i].style.fontSize = String(event.value) + 'px';
-  //       }
-  //     }
-  //   }
-  // };
-  // playAudio() {
-  //   this.audio.play();
-  // }
-  // stopAudio() {
-  //   this.audio.pause();
-  //}
+  }
 
 }
+

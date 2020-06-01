@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "ValorantFont";
+  src: url("../../../assets/Valorant Font.ttf");
+}
+
+div {
+  background: black;
+}
+
+img{
+  max-height: 100%;
+  object-fit: contain;
+  text-align: left;
+  padding-right: 100px;
+}
+
+
+.val-home-button {
+  font-family: ValorantFont;
+  font-size: 50px;
+  background-color: black;
+  color: white;
+}
+
+
